@@ -1,1 +1,54 @@
-<p>dashboard works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 mt-2">
+      <div
+        class="card border-left-success shadow h-100 py-2"
+        id="redirect"
+        routerLink="/recipes"
+      >
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div
+                class="text-xs font-weight-bold text-uppercase mb-1"
+              >
+                Total Recipes
+              </div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+                {{ totalRecipes }}
+              </div>
+            </div>
+            <div class="col-auto">
+              <i class="bi bi-list-check text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6 mt-2">
+      <div
+        class="card border-left-success shadow h-100 py-2"
+        id="redirect"
+        routerLink="/shopping-list"
+      >
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div
+                class="text-xs font-weight-bold text-uppercase mb-1"
+              >
+                Shopping List - Total Items
+              </div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+                {{ totalItemsShoppingList }}
+              </div>
+            </div>
+            <div class="col-auto">
+              <i class="bi bi-list-check text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
