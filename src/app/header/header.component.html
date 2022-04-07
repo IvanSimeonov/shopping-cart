@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <div class="container-fluid">
-    <a href="#" class="navbar-brand">
+    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="'active'">
       <img
         class="d-inline-block align-text-top"
         [src]="logoSrc"
@@ -24,19 +24,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="navbar-item">
-          <a href="#" class="nav-link">Home</a>
+          <a class="nav-link" [routerLink]="['/']" routerLinkActive="'active'"
+            >Home</a
+          >
         </li>
         <li class="navbar-item">
-          <a href="#" class="nav-link">Recipes</a>
+          <a
+            class="nav-link"
+            [routerLink]="['/recipes']"
+            [routerLinkActive]="'active'"
+            >Recipes</a
+          >
         </li>
         <li class="navbar-item">
-          <a href="#" class="nav-link">Shopping List</a>
+          <a class="nav-link">Shopping List</a>
         </li>
         <li class="navbar-item">
-          <a href="#" class="nav-link">Contacts</a>
+          <a class="nav-link">Contacts</a>
         </li>
         <li class="navbar-item">
-          <a href="#" class="nav-link">About</a>
+          <a class="nav-link">About</a>
         </li>
       </ul>
     </div>
